@@ -1,0 +1,7 @@
+services:
+  clc_web_services.crm_service:
+    class: Drupal\clc_web_services\Services\CrmService
+  clc_web_services.habeas_data_service:
+    class: Drupal\clc_web_services\Services\HabeasDataService
+  clc_web_services.voz_cliente_kalley_service:
+    class: Drupal\clc_web_services\Services\VozClienteKalley

@@ -1,0 +1,27 @@
+colcomercio.config:
+  title: 'Colcomercio'
+  description: 'Habeas Data configuration'
+  parent: system.admin
+  route_name: clc_web_services.clc_habeas_data_config_form
+  weight: 1
+
+clc_web_services.habeas_data_config:
+  title: 'Conf. Habeas Data'
+  description: 'Habeas Data configuration web service'
+  parent: colcomercio.config
+  route_name: clc_web_services.clc_habeas_data_config_form
+  weight: 1
+
+clc_web_services.crm_config:
+  title: 'Conf. Services CRM'
+  description: 'CRM Web service configurationn'
+  parent: colcomercio.config
+  route_name: clc_web_services.clc_crm_config_form
+  weight: 2
+
+clc_web_services.cliente_kalley_config:
+  title: 'Conf. Services Voz Cliente Kalley'
+  description: 'Voz Cliente Kalley web service configuration'
+  parent: colcomercio.config
+  route_name: clc_web_services.clc_cliente_kalley_config_form
+  weight: 3

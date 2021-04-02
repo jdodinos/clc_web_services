@@ -1,0 +1,5 @@
+habeas_data:
+  js:
+    libraries/clc_habeas_data.js: {}
+  dependencies:
+    - core/jquery

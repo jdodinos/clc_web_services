@@ -1,0 +1,31 @@
+clc_web_services.clc_habeas_data_config_form:
+  path: '/admin/config/habeas-data-config'
+  defaults:
+    _form: '\Drupal\clc_web_services\Form\ConfigHabeasDataForm'
+    _title: 'Habeas Data configuration'
+  requirements:
+    _permission: 'Config Web Services'
+
+clc_web_services.autocomplete_contents:
+  path: '/habeas-data-autocomplete-contents'
+  defaults:
+    _controller: '\Drupal\clc_web_services\Controller\AutocompleteController::handleContents'
+    _format: json
+  requirements:
+    _access: 'TRUE'
+
+clc_web_services.clc_crm_config_form:
+  path: '/admin/config/crm-services-config'
+  defaults:
+    _form: '\Drupal\clc_web_services\Form\ConfigCrmServiceForm'
+    _title: 'CRM Web service configuration'
+  requirements:
+    _permission: 'Config Web Services'
+
+clc_web_services.clc_cliente_kalley_config_form:
+  path: '/admin/config/cliente-kalley-services-config'
+  defaults:
+    _form: '\Drupal\clc_web_services\Form\ConfigClienteKalleyForm'
+    _title: 'Voz Cliente Kalley web service configuration'
+  requirements:
+    _permission: 'Config Web Services'

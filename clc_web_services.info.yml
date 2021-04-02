@@ -1,0 +1,5 @@
+name: 'CLC Web Services'
+type: module
+description: 'Manage connections to the web services and functionallity'
+core: 8.x
+package: 'Custom'
