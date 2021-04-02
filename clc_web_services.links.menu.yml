@@ -14,7 +14,7 @@ clc_web_services.habeas_data_config:
 
 clc_web_services.crm_config:
   title: 'Conf. Services CRM'
-  description: 'CRM Web service configurationn'
+  description: 'CRM Web service configuration'
   parent: colcomercio.config
   route_name: clc_web_services.clc_crm_config_form
   weight: 2

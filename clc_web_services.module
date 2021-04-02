@@ -17,7 +17,7 @@ function clc_web_services_help($route_name, RouteMatchInterface $route_match) {
     case 'help.page.clc_web_services':
       $output = '';
       $output .= '<h3>' . t('About') . '</h3>';
-      $output .= '<p>' . t('Manage web services functionallity') . '</p>';
+      $output .= '<p>' . t('Manage web services functionality') . '</p>';
       return $output;
 
     default:
@@ -28,7 +28,7 @@ function clc_web_services_help($route_name, RouteMatchInterface $route_match) {
  * Implements hook_form_alter().
  */
 function clc_web_services_form_alter(&$form, FormStateInterface $form_state, $form_id) {
-  // This functionallity working just anonymous users.
+  // This functionality working just anonymous users.
   if (\Drupal::currentUser()->isAnonymous()) {
     $availables_forms = [
       'webform_submission_contactanos_y_pqrs_add_form',
@@ -63,7 +63,7 @@ function clc_web_services_form_validate(&$form, FormStateInterface $form_state) 
 
 /**
  * function clc_web_services_crm_creacaso.
- * This function consume the method crea_caso in web service of SIGA.
+ * This function consumes the method crea_caso in web service of SIGA.
  *
  * @param string $form_id.
  *   The form id.
@@ -99,7 +99,7 @@ function clc_web_services_crm_creacaso($form_id, $values, FormStateInterface $fo
 
 /**
  * function clc_web_services_habeas_data.
- * This function consume the method of Habeas Data service.
+ * This function consumes the method of Habeas Data service.
  *
  * @param string $form_id.
  *   The form id.
@@ -135,7 +135,7 @@ function clc_web_services_habeas_data($form_id, $values, FormStateInterface $for
 
 /**
  * function clc_web_services_voz_cliente_kalley.
- * This function consume the method of Voz Cliente Kalley service.
+ * This function consumes the method of Voz Cliente Kalley service.
  *
  * @param string $form_id.
  *   The form id.
